@@ -10,8 +10,7 @@ const getRelativePath = (filePath) => {
 }
 
 const emitHandle = (compilation, callback) => {
-  Object.keys(compilation.entrypoints).forEach(key => {
-    const { chunks } = compilation.entrypoints[key]
+  compilation.entrypoints.forEach(({chunks}) => {
     const entryChunk = chunks.pop()
 
     entryChunk.files.forEach(filePath => {
