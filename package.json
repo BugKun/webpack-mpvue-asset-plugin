@@ -1,6 +1,6 @@
 {
-  "name": "webpack4-mpvue-asset-plugin",
-  "version": "2.0.1",
+  "name": "webpack-mpvue-asset-plugin",
+  "version": "2.0.0",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -8,21 +8,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "nopast",
+  "author": "rememberwz <rememberwz@gmail.com>",
   "license": "MIT",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/BugKun/webpack-mpvue-asset-plugin/tree/feature/webpack4"
+    "url": "git+https://github.com/mpvue/webpack-mpvue-asset-plugin.git"
   },
   "keywords": [
-    "mpvue",
-    "webpack4"
+    "mpvue"
   ],
   "bugs": {
     "url": "https://github.com/mpvue/webpack-mpvue-asset-plugin/issues"
   },
-  "homepage": "https://github.com/BugKun/webpack-mpvue-asset-plugin/tree/feature/webpack4#readme",
+  "homepage": "https://github.com/mpvue/webpack-mpvue-asset-plugin#readme",
   "description": "",
   "dependencies": {
     "relative": "^3.0.2",
