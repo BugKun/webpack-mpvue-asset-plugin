@@ -13,7 +13,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/BugKun/webpack-mpvue-asset-plugin/tree/feature/webpack4"
+    "url": "https://github.com/BugKun/webpack-mpvue-asset-plugin/tree/nopast/webpack4"
   },
   "keywords": [
     "mpvue",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/mpvue/webpack-mpvue-asset-plugin/issues"
   },
-  "homepage": "https://github.com/BugKun/webpack-mpvue-asset-plugin/tree/feature/webpack4#readme",
+  "homepage": "https://github.com/BugKun/webpack-mpvue-asset-plugin/tree/nopast/webpack4#readme",
   "description": "",
   "dependencies": {
     "relative": "^3.0.2",
