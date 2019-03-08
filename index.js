@@ -10,7 +10,7 @@ const getRelativePath = (filePath) => {
 }
 
 const emitHandle = (compilation, callback) => {
-  compilation.entrypoints.forEach(({chunks}) => {
+  function chunksHandle(chunks) {
     const entryChunk = chunks.pop()
 
     entryChunk.files.forEach(filePath => {
@@ -39,7 +39,17 @@ const emitHandle = (compilation, callback) => {
         assetFile.source = () => content
       })
     })
-  })
+  }
+
+  if(compilation.entrypoints instanceof Map) {
+    compilation.entrypoints.forEach(({chunks}) => chunksHandle(chunks))
+  }else {
+    Object.keys(compilation.entrypoints).forEach(key => {
+      const { chunks } = compilation.entrypoints[key]
+      chunksHandle(chunks)
+    })
+  }
+
   callback()
 }
 
