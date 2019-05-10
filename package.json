@@ -1,6 +1,6 @@
 {
   "name": "webpack4-mpvue-asset-plugin",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "index.js",
   "directories": {
     "lib": "lib"
