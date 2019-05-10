@@ -33,7 +33,7 @@ const emitHandle = (compilation, callback) => {
               relativePath = getRelativePath(relativePath)
               content = `@import "${relativePath}";\n${content}`
             } else if (!(/^\.map$/.test(extname))) {
-              content = `require("${relativePath}")\n${content}`
+              content = `require("${relativePath}");\n${content}`
             }
           }
         })
